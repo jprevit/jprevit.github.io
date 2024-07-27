@@ -52,9 +52,21 @@
             color: white;
         }
 
-        i:hover {
-            color: greenyellow;
-            text-shadow: 0px 0px 10px greenyellow;
+        .tech:hover {
+            color: rgb(151, 219, 48);
+            transform: translate(0px, -10px) scale(120%);
+            transition: ease-in-out;
+            transition-duration: 250ms;
+            background-color: rgba(231, 231, 231, 0.5);
+            font-weight: bolder;
+        }
+
+        .technobg:hover {
+            color: rgb(151, 219, 48);
+            transform: translate(0px, -10px) scale(120%);
+            transition: ease-in-out;
+            transition-duration: 250ms;
+            font-weight: bolder;
         }
 
         .button {
@@ -110,15 +122,15 @@
             <span class="w3-jumbo w3-hide-small">John Previtera</span><br>
             <span class="w3-xxlarge w3-hide-large w3-hide-medium">John Previtera</span><br>
             <div class="w3-xlarge w3-text-white">Full-Stack Developer</div>
-            <div class="w3-xlarge w3-text-white">
-                <i class="mdi mdi-vuejs" title="Vue JS Framework"></i>
-                <i class="mdi mdi-language-csharp" title="C Sharp"></i>
-                <i class="mdi mdi-database" title="SQL"></i>
-                <i class="mdi mdi-nodejs" title="NodeJS"></i>
-                <i class="mdi mdi-language-html5" title="HTML"></i>
-                <i class="mdi mdi-language-javascript" title="Javascript"></i>
+            <div class="fs-1 w3-text-white mb-3">
+                <i class="mdi mdi-vuejs technobg" title="Vue JS Framework"></i>
+                <i class="mdi mdi-language-csharp technobg" title="C Sharp"></i>
+                <i class="mdi mdi-database technobg" title="SQL"></i>
+                <i class="mdi mdi-nodejs technobg" title="NodeJS"></i>
+                <i class="mdi mdi-language-html5 technobg" title="HTML"></i>
+                <i class="mdi mdi-language-javascript technobg" title="Javascript"></i>
             </div>
-            <a href="#about" class="button">Learn
+            <a href="#about" class="button mt-5">Learn
                 more</a>
         </div>
         <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
@@ -136,22 +148,22 @@
     <div class="w3-container w3-white" style="padding:128px 16px" id="about">
         <h3 class="w3-center">ABOUT JOHN</h3>
         <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <div class="w3-quarter">
+            <div class="w3-quarter tech">
                 <i class="mdi mdi-vuejs w3-margin-bottom w3-jumbo w3-center"></i>
                 <p class="w3-large">Modern Frameworks</p>
                 <p>Experience creating state of the art front-ends</p>
             </div>
-            <div class="w3-quarter">
+            <div class="w3-quarter tech">
                 <i class="mdi mdi-language-csharp w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Efficient APIs</p>
                 <p>Crafting high-speed backends</p>
             </div>
-            <div class="w3-quarter">
+            <div class="w3-quarter tech">
                 <i class="mdi mdi-nodejs w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Broad Experience</p>
                 <p>Working within your techstack to deliver results</p>
             </div>
-            <div class="w3-quarter">
+            <div class="w3-quarter tech">
                 <i class="mdi mdi-database w3-margin-bottom w3-jumbo"></i>
                 <p class="w3-large">Quick Databases</p>
                 <p>Experience using both SQL and NOSQL databases to align with your needs</p>
@@ -169,13 +181,13 @@
                 <img src="assets/allspicescreenshot.png" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="A recipe site">
             </div> -->
-            <div class="w3-col l4 m6">
+            <div class="w3-col l4 m6 technobg">
                 <a href="https://tower.johnprevitera.com">
                     <img src="assets\towerscreenshot.png" style="width:100%" class="w3-hover-opacity"
                         alt="An event scheduling site">
                 </a>
             </div>
-            <div class="w3-col l4 m6">
+            <div class="w3-col l4 m6 technobg">
                 <a href="https://keepr.johnprevitera.com/">
                     <img src="assets/keeprscreenshot.png" style="width:100%" class="w3-hover-opacity"
                         alt="An image sharing site" title="Keepr an image sharing app">
@@ -196,7 +208,8 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a href="#home" class=" button"><i class="fa fa-arrow-up w3-margin-right"></i>To the
+            top</a>
         <div class="w3-xlarge w3-section">
             <a href="https://github.com/jprevit">
                 <i class="fa fa-github w3-hover-opacity"></i>
