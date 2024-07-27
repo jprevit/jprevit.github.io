@@ -25,9 +25,13 @@
 
         body,
         html {
-            background-color: black;
             height: 100%;
             line-height: 1.8;
+            background:
+                linear-gradient(135deg, #16191c 21px, #529467 22px, #529467 24px, transparent 24px, transparent 67px, #529467 67px, #529467 69px, transparent 69px),
+                linear-gradient(225deg, #16191c 21px, #529467 22px, #529467 24px, transparent 24px, transparent 67px, #529467 67px, #529467 69px, transparent 69px)0 64px;
+            background-color: #16191c;
+            background-size: 64px 128px;
         }
 
         /* Full height image header */
@@ -59,10 +63,10 @@
             transition-duration: 250ms;
             background-color: rgba(231, 231, 231, 0.5);
             font-weight: bolder;
+            backdrop-filter: blur(3px);
         }
 
         .technobg:hover {
-            color: rgb(151, 219, 48);
             transform: translate(0px, -10px) scale(120%);
             transition: ease-in-out;
             transition-duration: 250ms;
@@ -95,7 +99,8 @@
             <div class="w3-right w3-hide-small">
                 <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
                 <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+                <a href=" mailto:johngprevitera@gmail.com" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>
+                    CONTACT</a>
             </div>
             <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -183,14 +188,13 @@
             </div> -->
             <div class="w3-col l4 m6 technobg">
                 <a href="https://tower.johnprevitera.com">
-                    <img src="assets\towerscreenshot.png" style="width:100%" class="w3-hover-opacity"
-                        alt="An event scheduling site">
+                    <img src="assets\towerscreenshot.png" style="width:100%" class="" alt="An event scheduling site">
                 </a>
             </div>
             <div class="w3-col l4 m6 technobg">
                 <a href="https://keepr.johnprevitera.com/">
-                    <img src="assets/keeprscreenshot.png" style="width:100%" class="w3-hover-opacity"
-                        alt="An image sharing site" title="Keepr an image sharing app">
+                    <img src="assets/keeprscreenshot.png" style="width:100%" class="" alt="An image sharing site"
+                        title="Keepr an image sharing app">
                 </a>
             </div>
         </div>
