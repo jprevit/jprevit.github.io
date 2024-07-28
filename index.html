@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
+    <meta name="description" content="John Previtera's Software Developer Portfolio">
     <title>John Previtera</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,7 +130,8 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"
+            name="Sidebar Menu">Close
             ×</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
         <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
@@ -154,11 +156,11 @@
                 more</a>
         </div>
         <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-            <a href="https://github.com/jprevit">
+            <a href="https://github.com/jprevit" title="Github Profile" class="m-2 fs-3">
                 <i class="fa fa-github"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/john-previtera/">
+            <a href="https://www.linkedin.com/in/john-previtera/" title="LinkedIn Profile" class="m-2 fs-3">
                 <i class="fa fa-linkedin"></i>
             </a>
         </div>
@@ -194,7 +196,6 @@
     <!-- Work Section -->
     <div class="w3-container container w3-text-white" style="padding:128px 16px" id="work">
         <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center w3-large">Examples of my projects</p>
 
         <div class="w3-row-padding row justify-content-around w3-center" style="margin-top:64px">
             <!-- <div class="w3-col l4 m6">
@@ -238,26 +239,17 @@
         <a href="#home" class=" button"><i class="fa fa-arrow-up w3-margin-right"></i>To the
             top</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://github.com/jprevit">
+            <a href="https://github.com/jprevit" title="Github Profile" class="fs-1 m-4">
                 <i class="fa fa-github w3-hover-opacity"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/john-previtera/">
+            <a href="https://www.linkedin.com/in/john-previtera/" title="LinkedIn Profile" class="fs-1 m-4">
                 <i class="fa fa-linkedin w3-hover-opacity"></i>
             </a>
         </div>
     </footer>
 
     <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
@@ -277,4 +269,4 @@
 
 </body>
 
-</html>
+</html>1
