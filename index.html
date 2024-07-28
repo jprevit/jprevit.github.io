@@ -61,7 +61,7 @@
             transform: translate(0px, -10px) scale(120%);
             transition: ease-in-out;
             transition-duration: 250ms;
-            background-color: rgba(231, 231, 231, 0.5);
+            background-color: rgba(184, 247, 209, 0.5);
             font-weight: bolder;
             backdrop-filter: blur(3px);
         }
@@ -85,6 +85,21 @@
             background-color: greenyellow;
             border: solid greenyellow;
             box-shadow: 0px 0px 5px greenyellow;
+        }
+
+
+        .reveal {
+            transition: all .75s linear;
+        }
+
+        .reveal>.secret {
+            opacity: 0;
+        }
+
+        .reveal:hover>.secret {
+            opacity: 1;
+            transition: .5s;
+            margin-top: 1em;
         }
     </style>
 </head>
@@ -186,16 +201,24 @@
                 <img src="assets/allspicescreenshot.png" style="width:100%" onclick="onClick(this)"
                     class="w3-hover-opacity" alt="A recipe site">
             </div> -->
-            <div class="w3-col l4 m6 technobg">
+            <div class="w3-col l4 m6 tech p-4 reveal">
                 <a href="https://tower.johnprevitera.com">
                     <img src="assets\towerscreenshot.png" style="width:100%" class="" alt="An event scheduling site">
                 </a>
+                <div class="secret text-shadow">
+                    <p class="fs-5 fw-bolder">Tower</p>
+                    <p class="fw-light">An event management, and social media application</p>
+                </div>
             </div>
-            <div class="w3-col l4 m6 technobg">
+            <div class="w3-col l4 m6 tech p-4 reveal">
                 <a href="https://keepr.johnprevitera.com/">
                     <img src="assets/keeprscreenshot.png" style="width:100%" class="" alt="An image sharing site"
                         title="Keepr an image sharing app">
                 </a>
+                <div class="secret text-shadow">
+                    <p class="fs-5 fw-bolder">Keepr</p>
+                    <p class="fw-light">A social media platform for posting and sharing images</p>
+                </div>
             </div>
         </div>
     </div>
